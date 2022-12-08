@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "curs-project-1"
+version = "0.1.0"
+description = ""
+authors = ["ganst <qanstashet_911@mail.ru>"]
+readme = "README.md"
+packages = [{include = "curs_project_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-sorted = 'curs_project_1.sort_name_date:run_'
+get-banch = 'curs_project_1.funk_sorter:run_'
+split_file = 'curs_project_1.funk_split_file:funk_split'
